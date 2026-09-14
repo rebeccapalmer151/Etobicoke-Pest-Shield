@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="dynamic-title">Etobicoke Pest Shield | Pest Control & Property Care</title>
+  <meta id="dynamic-desc" name="description" content="Etobicoke Pest Shield offers expert educational insights and property care guidelines for maintaining pest-free homes across Etobicoke.">
+  <link id="dynamic-canonical" rel="canonical" href="https://etobicokepestshield.com/etobicoke/">
+  
+  <!-- Open Graph -->
+  <meta id="og-title" property="og:title" content="Etobicoke Pest Shield">
+  <meta id="og-desc" property="og:description" content="Expert insights and structural pest management guidance for Etobicoke homeowners.">
+  <meta id="og-type" property="og:type" content="website">
+  <meta id="og-url" property="og:url" content="https://etobicokepestshield.com/etobicoke/">
+  <meta property="og:site_name" content="Etobicoke Pest Shield">
+
+  <!-- JSON-LD Structured Data Container -->
+  <script type="application/ld+json" id="schema-json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Etobicoke Pest Shield",
+    "url": "https://etobicokepestshield.com/etobicoke/"
+  }
+  </script>
+
+  <style>
+    /* ==========================================
+       DESIGN SYSTEM (White & Blue, Soft Tones, Glassmorphism, Apple Motion)
+       ========================================== */
+    :root {
+      --bg-main: #f4f8fb;
+      --bg-card: rgba(255, 255, 255, 0.82);
+      --border-glass: rgba(2, 132, 199, 0.14);
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --primary-dark: #0369a1;
+      --text-dark: #0f172a;
+      --text-muted: #475569;
+      --accent-glow: rgba(2, 132, 199, 0.08);
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 25px -5px rgba(2, 132, 199, 0.12);
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      --radius: 16px;
+      --max-width: 1140px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-dark);
+      line-height: 1.68;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Glassmorphism Components */
+    .glass-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .glass-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+
+    .glass-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(244, 248, 251, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-glass);
+    }
+
+    /* Navigation */
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 76px;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-dark);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+      text-decoration: none !important;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white !important;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary) !important;
+      border: 1px solid var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary-light);
+    }
+
+    /* Motion & Fade Effects */
+    .fade-in {
+      animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in, .glass-card:hover {
+        animation: none !important;
+        transform: none !important;
+      }
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin: 24px 0 16px;
+      flex-wrap: wrap;
+    }
+
+    .breadcrumbs a {
+      color: var(--text-muted);
+    }
+
+    .breadcrumbs a:hover {
+      color: var(--primary);
+    }
+
+    .breadcrumbs span.separator {
+      color: #cbd5e1;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+      background: radial-gradient(circle at top center, var(--primary-light) 0%, transparent 75%);
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      line-height: 1.2;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 32px;
+    }
+
+    /* Content Layout */
+    .page-section {
+      padding: 48px 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 32px;
+    }
+
+    /* Article Cards & Index */
+    .blog-card {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .blog-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+
+    .blog-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 12px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-radius: 12px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+      width: fit-content;
+    }
+
+    /* Full Article Styles */
+    .article-container {
+      background: white;
+      border-radius: var(--radius);
+      padding: 48px;
+      border: 1px solid var(--border-glass);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 40px;
+    }
+
+    .article-container h1 {
+      font-size: 2.4rem;
+      line-height: 1.25;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+      letter-spacing: -0.01em;
+    }
+
+    .article-meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 20px;
+      margin-bottom: 32px;
+    }
+
+    .article-body h2 {
+      font-size: 1.6rem;
+      margin: 36px 0 16px;
+      color: var(--primary-dark);
+      line-height: 1.3;
+    }
+
+    .article-body h3 {
+      font-size: 1.25rem;
+      margin: 24px 0 12px;
+      color: var(--text-dark);
+    }
+
+    .article-body p {
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+      color: #334155;
+    }
+
+    .article-body ul, .article-body ol {
+      margin: 0 0 24px 24px;
+      color: #334155;
+    }
+
+    .article-body li {
+      margin-bottom: 8px;
+    }
+
+    /* FAQ Box */
+    .faq-section {
+      margin-top: 48px;
+      padding-top: 36px;
+      border-top: 2px solid var(--primary-light);
+    }
+
+    .faq-item {
+      margin-bottom: 24px;
+      padding: 20px;
+      background: var(--bg-main);
+      border-radius: 12px;
+    }
+
+    .faq-item h4 {
+      font-size: 1.1rem;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+      font-size: 0.98rem;
+    }
+
+    /* Testimonial Box */
+    .testimonial-box {
+      padding: 32px;
+      border-left: 4px solid var(--primary);
+      margin: 32px 0;
+      background: var(--primary-light);
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .testimonial-quote {
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--primary-dark);
+      font-size: 0.9rem;
+    }
+
+    /* Form Design */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: white;
+    }
+
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    /* Footer */
+    footer {
+      background: white;
+      border-top: 1px solid var(--border-glass);
+      padding: 48px 0 32px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h4 {
+      color: var(--text-dark);
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      color: var(--text-muted);
+    }
+
+    .footer-col a:hover {
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 24px;
+      border-top: 1px solid #f1f5f9;
+    }
+
+    /* Utility */
+    .hidden { display: none !important; }
+    .text-center { text-align: center; }
+
+    @media (max-width: 768px) {
+      .nav-inner { flex-direction: column; height: auto; padding: 16px 0; gap: 12px; }
+      .nav-links { gap: 16px; flex-wrap: wrap; justify-content: center; }
+      .hero h1 { font-size: 2rem; }
+      .article-container { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="glass-nav">
+    <div class="container nav-inner">
+      <a href="https://etobicokepestshield.com/etobicoke/" class="logo route-link">
+        <span class="logo-icon">P</span>
+        <span>Etobicoke Pest Shield</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="https://etobicokepestshield.com/etobicoke/" class="route-link">Home</a></li>
+        <li><a href="https://etobicokepestshield.com/etobicoke/pest-control/" class="route-link">Services</a></li>
+        <li><a href="https://etobicokepestshield.com/etobicoke/about/" class="route-link">About</a></li>
+        <li><a href="https://etobicokepestshield.com/etobicoke/blog/" class="route-link">Resource Blog</a></li>
+        <li><a href="https://etobicokepestshield.com/etobicoke/contact/" class="route-link btn btn-outline" style="padding:6px 16px;">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- DYNAMIC VIEW RENDER TARGET -->
+  <main id="app-view" class="container fade-in">
+    <!-- Rendered dynamically by Router -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo" style="margin-bottom: 12px;">
+            <span class="logo-icon">P</span>
+            <span>Etobicoke Pest Shield</span>
+          </div>
+          <p>An independent educational and property care publication dedicated to sustainable residential upkeep and preventative pest management in Etobicoke, Ontario.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="https://etobicokepestshield.com/etobicoke/" class="route-link">Home</a></li>
+            <li><a href="https://etobicokepestshield.com/etobicoke/pest-control/" class="route-link">Pest Control Services</a></li>
+            <li><a href="https://etobicokepestshield.com/etobicoke/about/" class="route-link">About Our Publication</a></li>
+            <li><a href="https://etobicokepestshield.com/etobicoke/contact/" class="route-link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resource Articles</h4>
+          <ul>
+            <li><a href="https://etobicokepestshield.com/etobicoke/weather-affects-pest-control-scheduling-etobicoke/" class="route-link">Weather & Scheduling</a></li>
+            <li><a href="https://etobicokepestshield.com/etobicoke/why-basements-are-pest-hotspot-etobicoke-homes/" class="route-link">Basement Pest Hotspots</a></li>
+            <li><a href="https://etobicokepestshield.com/etobicoke/build-pest-resistant-compost-system-etobicoke-yard/" class="route-link">Pest-Resistant Composting</a></li>
+            <li><a href="https://etobicokepestshield.com/etobicoke/professional-pest-treatment-visit-etobicoke-expectations/" class="route-link">Professional Treatment Visits</a></li>
+            <li><a href="https://etobicokepestshield.com/etobicoke/keep-etobicoke-kitchen-pest-free-year-round/" class="route-link">Kitchen Pest Prevention</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Property Standards</h4>
+          <p>Promoting proactive maintenance, eco-conscious lawn and compost upkeep, and structural pest deterrence across West Toronto neighborhoods.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Etobicoke Pest Shield. All rights reserved. Educational property management resources.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT ROUTER & CONTENT ENGINE -->
+  <script>
+    // Configuration & Data
+    const BASE_DOMAIN = "https://etobicokepestshield.com";
+    const BASE_PATH = "/etobicoke/";
+
+    // Current Articles Data Source
+    const ARTICLES = [
+      {
+        id: "main",
+        isMain: true,
+        slug: "weather-affects-pest-control-scheduling-etobicoke",
+        url: BASE_DOMAIN + BASE_PATH + "weather-affects-pest-control-scheduling-etobicoke/",
+        title: "How Weather Affects Pest Control Scheduling in Etobicoke",
+        seoTitle: "How Weather Affects Pest Control Scheduling in Etobicoke | Pest Shield",
+        metaDesc: "Discover how Etobicoke's seasonal weather patterns affect pest behavior and learn the ideal scheduling timing for residential pest control treatments.",
+        category: "Seasonal Planning",
+        readTime: "6 min read",
+        excerpt: "Seasonal shifts in Southern Ontario directly dictate pest behavior. Learn how temperature swings and rainfall impact effective treatment timing.",
+        content: `
+          <p>Navigating home upkeep in Southern Ontario requires a keen understanding of seasonal shifts. From harsh winter frosts along Lake Ontario to humid midsummer stretches, local climate patterns influence how insects and rodents move around residential properties. Homeowners seeking long-term structural protection must realize that timing is everything when establishing barrier defenses and scheduling routine property inspections.</p>
+          
+          <p>When planning seasonal preventative maintenance, securing timely professional <a href="https://saniiq.com/etobicoke/">Pest Control in Etobicoke</a> ensures that treatments coincide with peak pest activity windows before infestation cycles take root inside structural walls. Weather changes act as natural catalysts: heavy spring rainfall forces ground-dwelling insects upwards into foundations, while early winter drops in temperature drive rodents toward warmer indoor insulation layers. Understanding these environmental triggers allows property owners to stay proactive rather than reactive.</p>
+
+          <h2>Spring Thaws and the Resurgence of Ground Insects</h2>
+          <p>As snowpack melts across Etobicoke during late March and April, soil saturation levels rise dramatically. Saturated ground conditions force burrowing pests such as pavement ants, earwigs, and cluster flies to seek higher, drier ground. During this period, exterior perimeter treatments must be scheduled strategically between heavy rainfall events. Applying barrier solutions to waterlogged foundations yields poor chemical adherence, rendering treatments ineffective. Professional schedules track atmospheric humidity and precipitation forecasts to apply residual barriers during dry 48-hour windows, ensuring optimal bonding to brick, concrete, and timber interfaces.</p>
+          
+          <p>Furthermore, early spring thaws wake overwintering queen carpenter ants. If structural wood around soffits or porch steps retains moisture from winter ice dams, these areas become primary targets. Early spring inspections focus on locating soft, water-damaged wood and applying targeted treatments before queen ants establish active satellite colonies.</p>
+
+          <h2>Summer Humidity and Population Acceleration</h2>
+          <p>The high summer humidity typical of the Greater Toronto Area creates ideal breeding environments for stinging insects, flies, and pavement ants. Elevated temperatures shorten the life cycle of many common household pests, meaning populations can double in size within weeks rather than months. During July and August, routine maintenance visits are best scheduled early in the morning when temperature levels are moderate, allowing treatments to dry evenly without rapid solar evaporation.</p>
+
+          <p>High humidity also impacts baseline rodent behavior. Rats and mice frequently forage outdoors near garden borders and compost bins during hot months. However, severe summer thunderstorms can rapidly flood subterranean burrows, driving rodents toward garage entryways and basement air bricks overnight. Scheduling perimeter inspections mid-summer helps detect newly created entry points before late-autumn temperature drops occur.</p>
+
+          <h2>Autumn Cooling and Rodent Migration</h2>
+          <p>September and October mark a critical transition phase in local property care. As nightly temperatures drop, cold-blooded insects slow down, but warm-blooded mammals accelerate their search for thermal shelter. House mice can squeeze through gaps as small as a dime, making foundation checks vital before frost sets in. Scheduling exterior exclusion work in early autumn—sealing gaps around utility lines, mortar joints, and door sweeps—prevents winter nesting inside subfloors and attic spaces.</p>
+
+          <div class="testimonial-box">
+            <p class="testimonial-quote">"Living near the Humber River valley in Etobicoke, we noticed seasonal influxes of ants every spring and mice every November. Learning to align our property maintenance schedule with weather transitions made a massive difference in keeping our home completely clear year-round."</p>
+            <p class="testimonial-author">— Standard Resident Review, Islington-City Centre West, Etobicoke</p>
+          </div>
+
+          <h2>Winter Dormancy and Interior Monitoring</h2>
+          <p>While external activity subsides during deep winter freezes, indoor conditions remain stable and heated. Pests that successfully breached structural barriers before December will remain active indoors throughout the winter. Winter visits focus primarily on indoor monitoring, mechanical exclusion, and attic inspections to verify that squirrels, raccoons, or wintering insects have not compromised insulation layers or air duct networks.</p>
+
+          <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+              <h4>Can pest treatments be applied effectively during rainy weather?</h4>
+              <p>Exterior liquid treatments require dry surfaces to cure properly. Professional technicians monitor daily rainfall forecasts and will reschedule exterior perimeter spraying for dry windows while performing internal mechanical exclusions or garage treatments during wet days.</p>
+            </div>
+            <div class="faq-item">
+              <h4>What is the best month to schedule preventative spring treatments in Etobicoke?</h4>
+              <p>Late April through mid-May is typically ideal. This period coincides with rising ground temperatures and initial ant activity while avoiding early spring heavy torrential rain patterns.</p>
+            </div>
+            <div class="faq-item">
+              <h4>Why do mice seem to enter homes rapidly in late October?</h4>
+              <p>As evening frost begins, natural outdoor food sources diminish and outdoor temperatures drop sharply. Mammals actively seek thermal plumes rising from basement vents and unsealed home foundations.</p>
+            </div>
+          </div>
+
+          <p style="margin-top: 32px;">By coordinating routine inspection routines with seasonal meteorological trends, homeowners maintain strong structural defenses year-round. To explore related home protection strategies, review our guides on <a href="${BASE_DOMAIN}${BASE_PATH}why-basements-are-pest-hotspot-etobicoke-homes/" class="route-link">basement pest vulnerability</a> and <a href="${BASE_DOMAIN}${BASE_PATH}build-pest-resistant-compost-system-etobicoke-yard/" class="route-link">pest-resistant yard composting systems</a>.</p>
+        `
+      },
+      {
+        id: "support1",
+        isMain: false,
+        slug: "why-basements-are-pest-hotspot-etobicoke-homes",
+        url: BASE_DOMAIN + BASE_PATH + "why-basements-are-pest-hotspot-etobicoke-homes/",
+        title: "Why Basements Are a Pest Hotspot in Etobicoke Homes",
+        seoTitle: "Why Basements Are a Pest Hotspot in Etobicoke Homes | Pest Shield",
+        metaDesc: "Learn why subterranean residential basements attract insects and rodents, and how moisture control and foundation sealing keep lower levels protected.",
+        category: "Basement Maintenance",
+        readTime: "5 min read",
+        excerpt: "Subterranean levels offer high moisture, darkness, and foundation access points that attract unwanted household invaders.",
+        content: `
+          <p>Basements form the structural foundation of residential properties across Etobicoke, offering valuable storage, utility space, and living areas. However, because subterranean structures reside directly below ground level, they are inherently exposed to higher humidity, groundwater pressure, and surrounding soil ecosystems. Understanding why lower levels remain prime targets for household pests is crucial for maintaining a healthy living environment.</p>
+
+          <p>Subterranean moisture, low natural lighting, and close proximity to foundation soil create an enticing habitat for crawling insects and mammals. Addressing basement vulnerabilities requires a combination of humidity management, structural sealing, and regular maintenance checks.</p>
+
+          <h2>Elevated Relative Humidity and Moisture Accumulation</h2>
+          <p>Relative humidity in unconditioned basements frequently rises above 60%, creating favorable environments for moisture-loving organisms like silverfish, sowbugs, centipedes, and subterranean termites. Cold concrete walls easily collect condensation when warm, humid summer air enters through basement windows or floor joists. Silverfish and booklice thrive in high humidity, feeding on microscopic mold spores, cardboard storage boxes, and organic debris.</p>
+          <p>Installing a dedicated heavy-duty dehumidifier to keep subterranean relative humidity below 50% significantly alters the microclimate, making lower levels inhospitable to moisture-dependent pests.</p>
+
+          <h2>Foundation Settling and Access Cracks</h2>
+          <p>Over decades, concrete foundations experience minor settling, freeze-thaw expansion cycles, and hairline cracking. Even gaps as small as a few millimeters allow entry to spiders, ants, and sowbugs. Furthermore, utility penetrations—where sewer lines, water pipes, electrical conduits, and HVAC lines pass through foundation walls—often feature degraded caulking or unsealed gaps.</p>
+          <p>Mice, capable of passing through gaps small enough to fit a ballpoint pen, readily follow thermal currents leaking from basement utility gaps. Sealing these entry points with hydraulic cement, silicone sealant, and copper mesh provides an immediate barrier defense.</p>
+
+          <h2>Stored Materials and Clutter</h2>
+          <p>Basements are frequently utilized for long-term storage of cardboard boxes, old fabric, timber offcuts, and seasonal gear. Cardboard absorbs ambient humidity, softens, and provides both food and shelter for cellulose-consuming insects and nesting material for rodents. Replacing cardboard containers with sealed, heavy-duty plastic storage bins removes nesting harborages and prevents pest access.</p>
+
+          <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+              <h4>How can I tell if basement humidity is attracting pests?</h4>
+              <p>Signs include persistent damp odors, visible condensation on cold water pipes, water stains along floor joists, and frequent sightings of centipedes or silverfish near drain openings.</p>
+            </div>
+            <div class="faq-item">
+              <h4>Should floor drains in the basement be covered or sealed?</h4>
+              <p>Floor drains should remain operational for flood safety but can be fitted with fine mesh drain covers or backwater valves to prevent insects from crawling up drainage lines.</p>
+            </div>
+            <div class="faq-item">
+              <h4>Are basement windows a common entry point for pests?</h4>
+              <p>Yes. Window wells frequently gather decaying leaves and moisture. Ensure window wells have proper drainage and install tightly fitting window screen covers.</p>
+            </div>
+          </div>
+
+          <p style="margin-top: 32px;">To ensure your entire property remains defended against outdoor pressures, consult our pillar resource on <a href="${BASE_DOMAIN}${BASE_PATH}weather-affects-pest-control-scheduling-etobicoke/" class="route-link">weather effects on treatment scheduling</a> as well as operational steps during a <a href="${BASE_DOMAIN}${BASE_PATH}professional-pest-treatment-visit-etobicoke-expectations/" class="route-link">professional treatment visit</a>.</p>
+        `
+      },
+      {
+        id: "support2",
+        isMain: false,
+        slug: "build-pest-resistant-compost-system-etobicoke-yard",
+        url: BASE_DOMAIN + BASE_PATH + "build-pest-resistant-compost-system-etobicoke-yard/",
+        title: "How to Build a Pest-Resistant Compost System in Your Etobicoke Yard",
+        seoTitle: "Build a Pest-Resistant Compost System in Your Yard | Pest Shield",
+        metaDesc: "Learn practical methods to design and maintain outdoor garden compost systems in Etobicoke without attracting unwanted rodents or insects.",
+        category: "Yard & Gardening",
+        readTime: "5 min read",
+        excerpt: "Composting organic kitchen waste enriches garden soil, but open heaps attract urban wildlife if not managed correctly.",
+        content: `
+          <p>Composting kitchen scraps and garden clippings is an excellent eco-friendly practice that enriches urban garden soil across Etobicoke. However, exposed or improperly balanced compost bins can quickly become major food sources for rats, mice, raccoons, and fruit flies. Building a resilient, pest-resistant composting setup lets you generate rich soil amendment while keeping wild animals at a safe distance.</p>
+
+          <p>Successful pest-free composting relies on structural containment, correct green-to-brown material ratios, and moisture control.</p>
+
+          <h2>Enclosed Bin Selection and Structural Hardware</h2>
+          <p>Open pile composting is unsuitable for dense residential areas. Instead, utilize heavy plastic tumbler bins or thick wooden units lined with heavy-gauge metal hardware cloth (1/4-inch galvanized steel mesh). Burrowing pests such as Norway rats can easily tunnel under wooden slatted bins unless a secure bottom metal mesh layer is firmly attached to the ground base.</p>
+          <p>Ensure that lids feature locking latches to prevent raccoons from opening containers during night hours.</p>
+
+          <h2>Managing Green and Brown Ratios</h2>
+          <p>Odors from decomposing nitrogen-rich "green" materials (fruit peels, vegetable scraps, coffee grounds) attract scavengers from long distances. Always bury fresh green additions under a generous 4-to-6-inch protective layer of carbon-rich "brown" materials (dry leaves, shredded cardboard, sawdust, straw).</p>
+          <p>Maintaining a 3:1 ratio of brown to green material neutralizes foul odors, accelerates decomposition temperatures, and deters surface-feeding insects.</p>
+
+          <h2>Items That Must Never Enter Outdoor Bins</h2>
+          <ul>
+            <li>Meat scraps, poultry, or fish residues</li>
+            <li>Bones, fat, lard, and cooking oils</li>
+            <li>Dairy products like cheese, butter, or yogurt</li>
+            <li>Pet waste or cat litter</li>
+            <li>Cooked foods containing heavy sauces or sugars</li>
+          </ul>
+
+          <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+              <h4>Why are rats attracted to my backyard compost bin?</h4>
+              <p>Rats are drawn by accessible food scraps, warm shelter inside active compost, or unburied protein items. Enclosing the bin bottom with wire mesh stops burrowing access.</p>
+            </div>
+            <div class="faq-item">
+              <h4>Can tumbler composters completely eliminate rodent issues?</h4>
+              <p>Sealed elevated tumbler bins are off the ground, making it virtually impossible for rodents to enter or nest inside, provided the aeration holes remain intact.</p>
+            </div>
+            <div class="faq-item">
+              <h4>What should I do if my compost bin starts smelling sour?</h4>
+              <p>A sour odor indicates excess moisture or inadequate oxygen. Turn the pile immediately to aerate it and mix in two full buckets of dry shredded leaves or cardboard.</p>
+            </div>
+          </div>
+
+          <p style="margin-top: 32px;">Maintaining outdoor perimeter cleanliness supports indoor protection. Learn more about broader scheduling factors in our <a href="${BASE_DOMAIN}${BASE_PATH}weather-affects-pest-control-scheduling-etobicoke/" class="route-link">seasonal scheduling guide</a> or review interior safety tips in our <a href="${BASE_DOMAIN}${BASE_PATH}keep-etobicoke-kitchen-pest-free-year-round/" class="route-link">year-round kitchen pest guide</a>.</p>
+        `
+      },
+      {
+        id: "support3",
+        isMain: false,
+        slug: "professional-pest-treatment-visit-etobicoke-expectations",
+        url: BASE_DOMAIN + BASE_PATH + "professional-pest-treatment-visit-etobicoke-expectations/",
+        title: "What Happens During a Professional Pest Treatment Visit in Etobicoke",
+        seoTitle: "What Happens During a Professional Treatment Visit | Pest Shield",
+        metaDesc: "Step-by-step breakdown of what property owners should expect during a professional residential pest inspection and treatment visit.",
+        category: "Home Care Protocols",
+        readTime: "5 min read",
+        excerpt: "Demystifying the inspection, treatment, and follow-up stages of a certified technician's residential property visit.",
+        content: `
+          <p>Scheduling a professional residential property service can leave homeowners wondering about the exact procedures involved. Understanding what occurs during a comprehensive inspection and treatment visit removes uncertainty and helps residents prepare their living spaces effectively beforehand.</p>
+
+          <p>Certified technicians follow standardized, safety-conscious protocols designed to identify pest species, locate structural harborages, apply targeted treatments, and deliver actionable preventative recommendations.</p>
+
+          <h2>1. Initial Property Assessment and Client Consultation</h2>
+          <p>A thorough visit begins with a detailed dialogue between the homeowner and technician. The specialist gathers information regarding recent sightings, unusual noises inside walls, noticed droppings, or localized material damage. Following the consultation, an extensive interior and exterior visual assessment is conducted.</p>
+          <p>Technicians inspect common high-vulnerability locations, including basement rim joists, attic insulation, under kitchen sinks, behind heavy appliances, and around exterior foundation perimeters.</p>
+
+          <h2>2. Targeted Application and Exclusion Work</h2>
+          <p>Once target species and entry points are confirmed, localized interventions are carried out according to Integrated Pest Management (IPM) guidelines. Modern treatment protocols prioritize targeted gel baits, dust formulations inside wall voids, and mechanical exclusion sealing over broad chemical applications.</p>
+
+          <ul>
+            <li><strong>Interior Interventions:</strong> Placement of tamper-resistant monitoring stations, application of discreet gel baits along cabinet hinges, and void treatments.</li>
+            <li><strong>Exterior Interventions:</strong> Applying perimeter residual barriers, sealing foundation weep holes with breathable wire mesh, and closing utility gap entry points.</li>
+          </ul>
+
+          <h2>3. Documentation and Post-Treatment Recommendations</h2>
+          <p>Following application, technicians provide clear documentation summarizing findings, used materials, safety instructions, and recommended re-entry times (if applicable). Homeowners receive specific structural maintenance tips, such as repairing leaky pipes, trimming overhanging tree branches, or clearing leaf clutter along exterior walls.</p>
+
+          <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+              <h4>Do occupants need to vacate the house during a treatment visit?</h4>
+              <p>For standard inspection and gel baiting applications, occupants usually stay home. For specific misting or liquid treatments, technicians may request occupants and pets step out for 2 to 4 hours until surfaces dry completely.</p>
+            </div>
+            <div class="faq-item">
+              <h4>How long does a standard residential service visit take?</h4>
+              <p>An initial comprehensive inspection and treatment visit for a typical detached home generally takes between 45 to 90 minutes depending on property size.</p>
+            </div>
+            <div class="faq-item">
+              <h4>How fast will I see results after a professional visit?</h4>
+              <p>Depending on species and treatment type, noticeable activity reductions typically occur within 3 to 7 days as foraging pests carry active baits back to central nests.</p>
+            </div>
+          </div>
+
+          <p style="margin-top: 32px;">To learn how seasonal factors impact service timing, read our main article on <a href="${BASE_DOMAIN}${BASE_PATH}weather-affects-pest-control-scheduling-etobicoke/" class="route-link">weather effects on service scheduling</a>, or check our guide on <a href="${BASE_DOMAIN}${BASE_PATH}why-basements-are-pest-hotspot-etobicoke-homes/" class="route-link">basement pest hotspots</a>.</p>
+        `
+      },
+      {
+        id: "support4",
+        isMain: false,
+        slug: "keep-etobicoke-kitchen-pest-free-year-round",
+        url: BASE_DOMAIN + BASE_PATH + "keep-etobicoke-kitchen-pest-free-year-round/",
+        title: "How to Keep Your Etobicoke Kitchen Pest-Free Year-Round",
+        seoTitle: "How to Keep Your Kitchen Pest-Free Year-Round | Pest Shield",
+        metaDesc: "Practical sanitation guidelines, food storage tips, and structural seal practices to keep residential kitchens completely free of household pests.",
+        category: "Interior Prevention",
+        readTime: "5 min read",
+        excerpt: "Kitchens are primary targets for foraging pests due to abundant food, water, and heat sources. Implement simple preventative routines.",
+        content: `
+          <p>The kitchen is the heart of any home, but it is also the primary zone of attraction for household pests. Food particles, moisture from sinks or dishwashers, and dark storage cabinets provide everything ants, pantry beetles, fruit flies, and rodents need to thrive. Maintaining a hygienic, secure kitchen space requires consistent daily habits and proper food storage practices.</p>
+
+          <p>By taking away primary food and water sources, homeowners can protect their kitchen counters, pantries, and food stores year-round.</p>
+
+          <h2>Airtight Food Storage Practices</h2>
+          <p>Cardboard cereal boxes, thin plastic bags, and unsealed flour bags offer minimal resistance to pantry pests like Indian meal moths or pantry beetles. Transfer dry food products—including rice, flour, oats, pasta, sugar, and pet food—into airtight glass, heavy BPA-free plastic, or stainless steel storage containers with rubber seals.</p>
+
+          <h2>Eliminating Standing Water and Plumbing Leaks</h2>
+          <p>Insects can survive longer without food than without water. A slow drip under the kitchen sink, condensation buildup behind dishwashers, or water pooling in refrigerator drain pans creates a ideal drinking station for crawling pests. Routinely check under sink traps for moisture leaks, wipe down sink basins before bedtime, and ensure dishwashers drain completely.</p>
+
+          <h2>Daily Cleaning Routines for Long-Term Prevention</h2>
+          <ul>
+            <li>Wipe down countertops and dining surfaces after every meal.</li>
+            <li>Sweep or vacuum kitchen floor surfaces daily to eliminate food crumbs.</li>
+            <li>Empty kitchen trash and compost bins daily into tightly covered outdoor bins.</li>
+            <li>Avoid leaving dirty dishes in the sink overnight.</li>
+            <li>Clean under heavy kitchen appliances like stoves and refrigerators quarterly.</li>
+          </ul>
+
+          <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+              <h4>How do small pantry beetles get into unopened dry food boxes?</h4>
+              <p>Pantry pests often enter homes inside pre-infested grocery packages or chew through soft cardboard packaging. Transferring items into sealed plastic containers stops infestation spreading.</p>
+            </div>
+            <div class="faq-item">
+              <h4>What is the fastest way to get rid of fruit flies in the kitchen?</h4>
+              <p>Remove overripe fruit, clean garbage disposal units, drain standing sink water, and place small traps containing apple cider vinegar with a drop of dish soap near sink drains.</p>
+            </div>
+            <div class="faq-item">
+              <h4>Why do ants appear on kitchen counters even when they look clean?</h4>
+              <p>Scout ants leave microscopic pheromone trails trailing toward micro-droplets of spilled juice, grease, or honey. Cleaning counters with warm soapy water breaks these chemical scent trails.</p>
+            </div>
+          </div>
+
+          <p style="margin-top: 32px;">For exterior management strategies that complement interior kitchen hygiene, read our guide on <a href="${BASE_DOMAIN}${BASE_PATH}build-pest-resistant-compost-system-etobicoke-yard/" class="route-link">building pest-resistant yard compost systems</a> and review the <a href="${BASE_DOMAIN}${BASE_PATH}weather-affects-pest-control-scheduling-etobicoke/" class="route-link">pillar seasonal scheduling guide</a>.</p>
+        `
+      }
+    ];
+
+    // ROUTER ENGINE
+    function renderPage() {
+      const path = window.location.pathname;
+      const app = document.getElementById('app-view');
+      window.scrollTo(0, 0);
+
+      // Match Route
+      if (path === BASE_PATH || path === BASE_PATH + "index.html" || path === "/") {
+        renderHome(app);
+      } else if (path === BASE_PATH + "pest-control/") {
+        renderService(app);
+      } else if (path === BASE_PATH + "about/") {
+        renderAbout(app);
+      } else if (path === BASE_PATH + "contact/") {
+        renderContact(app);
+      } else if (path === BASE_PATH + "blog/") {
+        renderBlogIndex(app);
+      } else {
+        // Match Article
+        const matchedArticle = ARTICLES.find(a => path.includes(a.slug));
+        if (matchedArticle) {
+          renderArticle(app, matchedArticle);
+        } else {
+          renderHome(app); // Fallback
+        }
+      }
+
+      // Update Navigation Active Links
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        if (link.getAttribute('href') === window.location.href) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+
+    // Dynamic Meta Helper
+    function setMeta(title, desc, url, type = "website") {
+      document.title = title;
+      document.getElementById('dynamic-title').innerText = title;
+      document.getElementById('dynamic-desc').setAttribute('content', desc);
+      document.getElementById('dynamic-canonical').setAttribute('href', url);
+      document.getElementById('og-title').setAttribute('content', title);
+      document.getElementById('og-desc').setAttribute('content', desc);
+      document.getElementById('og-type').setAttribute('content', type);
+      document.getElementById('og-url').setAttribute('content', url);
+
+      // JSON-LD Update
+      const schemaJson = {
+        "@context": "https://schema.org",
+        "@type": type === "article" ? "BlogPosting" : "WebSite",
+        "name": "Etobicoke Pest Shield",
+        "url": url,
+        "headline": title,
+        "description": desc
+      };
+      document.getElementById('schema-json').textContent = JSON.stringify(schemaJson);
+    }
+
+    // Breadcrumb Generator
+    function getBreadcrumbHTML(pageName, articleTitle = null) {
+      let html = `<nav class="breadcrumbs">
+        <a href="${BASE_DOMAIN}${BASE_PATH}" class="route-link">Home</a>
+        <span class="separator">/</span>`;
+      
+      if (articleTitle) {
+        html += `<a href="${BASE_DOMAIN}${BASE_PATH}blog/" class="route-link">Resource Blog</a>
+          <span class="separator">/</span>
+          <span>${articleTitle}</span>`;
+      } else {
+        html += `<span>${pageName}</span>`;
+      }
+      html += `</nav>`;
+      return html;
+    }
+
+    // VIEW RENDERERS
+    function renderHome(app) {
+      setMeta(
+        "Etobicoke Pest Shield | Pest Control & Property Care Resources",
+        "Educational guide and resource portal dedicated to structural pest prevention, home maintenance, and outdoor property care in Etobicoke.",
+        BASE_DOMAIN + BASE_PATH
+      );
+
+      app.innerHTML = `
+        <section class="hero">
+          <h1>Pest Control & Property Care Knowledge for Etobicoke</h1>
+          <p>Protecting residential structures through proactive seasonal care, scientific pest prevention insights, and sustainable home management practices.</p>
+          <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+            <a href="${BASE_DOMAIN}${BASE_PATH}pest-control/" class="route-link btn btn-primary">Explore Service Guide</a>
+            <a href="${BASE_DOMAIN}${BASE_PATH}blog/" class="route-link btn btn-outline">Read Resource Articles</a>
+          </div>
+        </section>
+
+        <section class="page-section">
+          <div class="text-center" style="margin-bottom: 40px;">
+            <span class="tag">Structural Defense</span>
+            <h2>Core Property Protection Pillars</h2>
+          </div>
+          <div class="grid-3">
+            <div class="glass-card blog-card">
+              <h3>Perimeter Safeguards</h3>
+              <p>Establishing clean structural boundaries, sealing foundation penetrations, and managing exterior moisture zones to prevent insect breaches.</p>
+            </div>
+            <div class="glass-card blog-card">
+              <h3>Seasonal Timing</h3>
+              <p>Understanding weather cycles, temperature fluctuations, and animal behavior trends across Etobicoke throughout the four seasons.</p>
+            </div>
+            <div class="glass-card blog-card">
+              <h3>Eco-Friendly Care</h3>
+              <p>Utilizing Integrated Pest Management (IPM) strategies that prioritize mechanical exclusion, sanitation, and low-impact treatments.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-section" style="background: white; padding: 40px; border-radius: var(--radius); border: 1px solid var(--border-glass);">
+          <div class="text-center" style="margin-bottom: 32px;">
+            <h2>Local Resident Experiences</h2>
+            <p style="color:var(--text-muted)">Feedback from homeowners across Etobicoke neighborhoods.</p>
+          </div>
+          <div class="grid-2">
+            <div class="testimonial-box">
+              <p class="testimonial-quote">"The seasonal scheduling breakdown opened my eyes to why ants appeared every spring near our kitchen window. Following these exclusion recommendations resolved our ongoing concerns!"</p>
+              <p class="testimonial-author">— Standard Resident Review, Kingsway Terrace, Etobicoke</p>
+            </div>
+            <div class="testimonial-box">
+              <p class="testimonial-quote">"Clear, educational, and practical property care advice. Sealing our basement utility lines and restructuring our outdoor compost bin completely prevented rodent entries this past winter."</p>
+              <p class="testimonial-author">— Homeowner Perspective, Mimico, Etobicoke</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-section">
+          <div class="text-center" style="margin-bottom: 32px;">
+            <h2>Latest Educational Resources</h2>
+          </div>
+          <div class="grid-3">
+            ${ARTICLES.slice(0, 3).map(a => `
+              <div class="glass-card blog-card">
+                <div>
+                  <span class="tag">${a.category}</span>
+                  <h3>${a.title}</h3>
+                  <p>${a.excerpt}</p>
+                </div>
+                <a href="${a.url}" class="route-link btn btn-outline" style="margin-top:16px;">Read Article</a>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    function renderService(app) {
+      setMeta(
+        "Pest Control Services & Inspection Protocols in Etobicoke | Pest Shield",
+        "Learn about comprehensive residential pest inspection protocols, general prevention strategies, and professional treatment expectations for Etobicoke homes.",
+        BASE_DOMAIN + BASE_PATH + "pest-control/"
+      );
+
+      app.innerHTML = `
+        ${getBreadcrumbHTML("Services")}
+        <div class="article-container">
+          <span class="tag">Service Guidance</span>
+          <h1>Pest Control & Property Care Standards in Etobicoke</h1>
+          <p style="font-size:1.1rem; color:var(--text-muted); margin-bottom:32px;">Maintaining structural integrity and indoor hygiene requires systematic inspection, accurate pest identification, and targeted maintenance protocols.</p>
+
+          <h2>General Residential Pest Prevention Framework</h2>
+          <p>Effective residential management relies on Integrated Pest Management (IPM). Rather than relying solely on chemical treatments, IPM focuses on structural modifications, sanitation improvements, and sealing entry pathways.</p>
+
+          <div class="grid-2" style="margin: 32px 0;">
+            <div class="glass-card" style="padding:24px;">
+              <h3>1. Comprehensive Exterior Inspection</h3>
+              <p>Examining foundation walls, weep holes, window wells, roof valleys, and soffit lines for structural gaps or water accumulation zones.</p>
+            </div>
+            <div class="glass-card" style="padding:24px;">
+              <h3>2. Targeted Interior Management</h3>
+              <p>Identifying high-risk zones such as lower-level basements, utility rooms, under-sink plumbing conduits, and kitchen cabinet hinges.</p>
+            </div>
+          </div>
+
+          <h2>Common Property Vulnerabilities in Local Homes</h2>
+          <p>Homes in Etobicoke range from historic mid-century builds near the Humber River to modern high-density builds along Lake Shore Boulevard. Key structural vulnerabilities include:</p>
+          <ul>
+            <li>Unsealed utility penetrations (gas lines, AC lines, water mains)</li>
+            <li>Degraded mortar joints or gaps around basement window wells</li>
+            <li>Clogged gutters creating roofline wood rot and ant harborages</li>
+            <li>Overhanging tree branches serving as animal highways to attic spaces</li>
+          </ul>
+
+          <div class="faq-section">
+            <h2>Service Frequently Asked Questions</h2>
+            <div class="faq-item">
+              <h4>How often should a residential property undergo inspection?</h4>
+              <p>Bi-annual inspections—conducted during early spring and late autumn—are ideal for catching structural vulnerabilities before seasonal migrations occur.</p>
+            </div>
+            <div class="faq-item">
+              <h4>What is the safest way to prepare a home for perimeter treatment?</h4>
+              <p>Clear perimeter zones around foundation walls by moving firewood piles, trimming bushes back 12 inches, and picking up children's outdoor toys.</p>
+            </div>
+          </div>
+
+          <div style="margin-top:40px; text-align:center;">
+            <a href="${BASE_DOMAIN}${BASE_PATH}contact/" class="route-link btn btn-primary">Submit a Property Inquiries Form</a>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderAbout(app) {
+      setMeta(
+        "About Etobicoke Pest Shield | Property Maintenance & Education",
+        "Learn about the mission, property care philosophy, and educational standards behind Etobicoke Pest Shield.",
+        BASE_DOMAIN + BASE_PATH + "about/"
+      );
+
+      app.innerHTML = `
+        ${getBreadcrumbHTML("About Us")}
+        <div class="article-container">
+          <span class="tag">Our Mission</span>
+          <h1>About Etobicoke Pest Shield</h1>
+          <p style="font-size:1.15rem; color:var(--text-muted); margin-bottom:32px;">Etobicoke Pest Shield was established as an independent educational publication dedicated to providing homeowners with clear, scientifically grounded property maintenance and pest prevention knowledge.</p>
+
+          <h2>Educational Authority & Property Philosophy</h2>
+          <p>We believe that informed homeowners are best equipped to maintain safe, comfortable, and pest-resilient living environments. By focusing on root causes—such as subterranean moisture, structural gaps, and seasonal environmental shifts—our articles enable residents to take proactive measures before infestations require aggressive interventions.</p>
+
+          <div class="grid-3" style="margin:32px 0;">
+            <div class="glass-card" style="padding:20px;">
+              <h4>Scientific Integrity</h4>
+              <p>Content based on verified entomological and building science principles.</p>
+            </div>
+            <div class="glass-card" style="padding:20px;">
+              <h4>Local Context</h4>
+              <p>Tailored specifically to Southern Ontario climate patterns and local housing architecture.</p>
+            </div>
+            <div class="glass-card" style="padding:20px;">
+              <h4>Proactive Defense</h4>
+              <p>Emphasizing mechanical exclusion, sanitation, and preventative care over reactive fixes.</p>
+            </div>
+          </div>
+
+          <h2>Community Commitment</h2>
+          <p>Whether you reside in Alderwood, Rexdale, Central Etobicoke, or along the Mimico waterfront, our resources are designed to help you navigate residential challenges with confidence.</p>
+        </div>
+      `;
+    }
+
+    function renderContact(app) {
+      setMeta(
+        "Contact Etobicoke Pest Shield | General Inquiries",
+        "Send general property care and article feedback inquiries to the Etobicoke Pest Shield team.",
+        BASE_DOMAIN + BASE_PATH + "contact/"
+      );
+
+      app.innerHTML = `
+        ${getBreadcrumbHTML("Contact")}
+        <div class="article-container">
+          <div class="text-center" style="margin-bottom:32px;">
+            <span class="tag">Get in Touch</span>
+            <h1>Contact Our Editorial Team</h1>
+            <p style="color:var(--text-muted)">Have questions regarding our property care publications? Send us a message below.</p>
+          </div>
+
+          <form class="contact-form glass-card" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" required placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required placeholder="jane@example.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" required placeholder="(416) 555-0199">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" required placeholder="How can we help you?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Submit Inquiry</button>
+          </form>
+
+          <div id="form-success" class="glass-card hidden" style="max-width:600px; margin:20px auto; padding:30px; text-align:center; background:var(--primary-light);">
+            <h3 style="color:var(--primary-dark); margin-bottom:12px;">Thank You!</h3>
+            <p>Your inquiry has been submitted successfully. Our editorial team will review your message shortly.</p>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderBlogIndex(app) {
+      setMeta(
+        "Resource Blog | Etobicoke Pest Shield Property Guides",
+        "Explore our complete repository of property care, pest prevention, seasonal scheduling, and lawn maintenance guides.",
+        BASE_DOMAIN + BASE_PATH + "blog/"
+      );
+
+      app.innerHTML = `
+        ${getBreadcrumbHTML("Resource Blog")}
+        <div class="text-center" style="margin-bottom:40px;">
+          <span class="tag">Resource Repository</span>
+          <h1>Property Care & Pest Control Articles</h1>
+          <p style="color:var(--text-muted); max-width:600px; margin:0 auto;">In-depth guides designed to protect your home structure, garden, basement, and living spaces across Etobicoke.</p>
+        </div>
+
+        <div class="grid-2">
+          ${ARTICLES.map(a => `
+            <div class="glass-card blog-card">
+              <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                  <span class="tag" style="margin-bottom:0;">${a.category}</span>
+                  <span style="font-size:0.8rem; color:var(--text-muted);">${a.readTime}</span>
+                </div>
+                <h3><a href="${a.url}" class="route-link" style="color:var(--text-dark);">${a.title}</a></h3>
+                <p>${a.excerpt}</p>
+              </div>
+              <div style="margin-top:20px;">
+                <a href="${a.url}" class="route-link btn btn-outline" style="width:100%; text-align:center;">Read Full Article</a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function renderArticle(app, article) {
+      setMeta(article.seoTitle, article.metaDesc, article.url, "article");
+
+      app.innerHTML = `
+        ${getBreadcrumbHTML("Blog", article.title)}
+        <article class="article-container">
+          <span class="tag">${article.category}</span>
+          <h1>${article.title}</h1>
+          <div class="article-meta">
+            Published by <strong>Etobicoke Pest Shield Editorial</strong> &bull; ${article.readTime} &bull; Property Maintenance Resource
+          </div>
+          <div class="article-body">
+            ${article.content}
+          </div>
+        </article>
+
+        <section class="page-section" style="padding-top:0;">
+          <h3>Related Articles in This Topical Cluster</h3>
+          <div class="grid-3" style="margin-top:16px;">
+            ${ARTICLES.filter(a => a.id !== article.id).slice(0, 3).map(a => `
+              <div class="glass-card blog-card">
+                <div>
+                  <span class="tag">${a.category}</span>
+                  <h4 style="font-size:1.05rem; margin-bottom:8px;"><a href="${a.url}" class="route-link" style="color:var(--text-dark);">${a.title}</a></h4>
+                </div>
+                <a href="${a.url}" class="route-link" style="font-weight:600; font-size:0.85rem; margin-top:12px;">Read Article &rarr;</a>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    // FORM HANDLER
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.querySelector('.contact-form').classList.add('hidden');
+      document.getElementById('form-success').classList.remove('hidden');
+    }
+
+    // CLIENT-SIDE ROUTING INTERCEPTOR
+    document.addEventListener('click', function(e) {
+      const target = e.target.closest('.route-link');
+      if (target) {
+        const href = target.getAttribute('href');
+        if (href && href.startsWith(BASE_DOMAIN)) {
+          e.preventDefault();
+          const localPath = href.replace(BASE_DOMAIN, '');
+          history.pushState(null, '', localPath);
+          renderPage();
+        }
+      }
+    });
+
+    window.addEventListener('popstate', renderPage);
+
+    // INITIAL LOAD
+    window.addEventListener('DOMContentLoaded', renderPage);
+  </script>
+
+  <!-- ROBOTS.TXT EMBEDDED REFERENCE -->
+  <script type="text/plain" id="robots-txt">
+User-agent: *
+Allow: /
+Sitemap: https://etobicokepestshield.com/sitemap.xml
+  </script>
+
+  <!-- XML SITEMAP EMBEDDED REFERENCE -->
+  <script type="text/xml" id="sitemap-xml">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://etobicokepestshield.com/etobicoke/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://etobicokepestshield.com/etobicoke/pest-control/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://etobicokepestshield.com/etobicoke/about/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://etobicokepestshield.com/etobicoke/contact/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://etobicokepestshield.com/etobicoke/blog/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://etobicokepestshield.com/etobicoke/weather-affects-pest-control-scheduling-etobicoke/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://etobicokepestshield.com/etobicoke/why-basements-are-pest-hotspot-etobicoke-homes/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://etobicokepestshield.com/etobicoke/build-pest-resistant-compost-system-etobicoke-yard/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://etobicokepestshield.com/etobicoke/professional-pest-treatment-visit-etobicoke-expectations/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://etobicokepestshield.com/etobicoke/keep-etobicoke-kitchen-pest-free-year-round/</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>
+  </script>
+</body>
+</html>
